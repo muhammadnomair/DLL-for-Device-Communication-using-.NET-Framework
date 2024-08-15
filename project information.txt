@@ -1,0 +1,15 @@
+--- DLL for Request and Resposne based Device-Communication in .NET Framewortk using C# ---
+In this comprehensive and detailed project, I have designed and created a dynamic linked library (.dll) for, first, communicating the device using request packet, and then extracted payload-buffer from resposne packet.
+However, the .DLL returns the bytes buffer as response. The response payload buffer should be parsed (decoded) according to the user requirements.
+This project solution has two projects: 
+1) "DeviceTelemetryDLL" project for creating a "DeviceTelemetryDLL" file, 
+2) "DeviceTelemetryDLLConsoleApp" project for testing the created .dll file 
+
+Note:
+This .dll file will be saved in the path (\DeviceTelemetryDLL\bin\Debug\net6.0) after compiling the project.
+
+Requirements:
+In order to successfully creating the .dll file for device-heartbeat telemetry, the end-user should provide the following input to the "GetTelemetryResposneData" function, which is in the "TestDLL" class of the "DeviceTelemetryDLLConsoleApp" project.
+The DLL inputs (in-oder); 
+1) Interface index (index of network interface with which the device is connected), index should start from 0
+2) Time-interval value (ms) for scheduling the Heartbeat telemetry request

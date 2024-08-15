@@ -1,1 +1,2 @@
 # Device-Communication-DLL-using-.NET-Framework
+In this comprehensive and detailed project, I have designed and created a dynamic linked library (.dll) for, first, communicating the device using request packet, and then extracted payload-buffer from resposne packet. However, the .DLL returns the bytes buffer as response. The response payload buffer should be parsed (decoded) according to the user requirements.
